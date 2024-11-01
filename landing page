@@ -1,0 +1,309 @@
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTech Solar Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>GreenTech Solar Solutions</h1>
+        <p>Your Trusted Partner in Sustainable Energy</p>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#stats">Our Impact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <img src="https://cdn.enfsolar.com/z/s/logos/4376064c81f16e36.png?v=1" alt="Solar Panels" class="responsive-img">
+            <h2><center>Power Your Future with Solar</center></h2>
+            <p><center>Join us in making a greener tomorrow by switching to renewable solar energy today. Clean, efficient, and sustainable solutions tailored just for you.</center></p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Solar Panel Installation</h3>
+            <p>Professional installation of high-efficiency solar panels on residential and commercial rooftops.</p>
+        </div>
+        <div class="service-item">
+            <h3>System Maintenance</h3>
+            <p>Keep your solar system running at its best with our regular maintenance packages.</p>
+        </div>
+        <div class="service-item">
+            <h3>Energy Consulting</h3>
+            <p>Personalized consultation to help you choose the right system for your energy needs.</p>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="container stats">
+        <h2>Our Impact</h2>
+        <div class="stat-item">
+            <h3>10,000+</h3>
+            <p>Happy Customers</p>
+        </div>
+        <div class="stat-item">
+            <h3>5MW+</h3>
+            <p>Solar Power Installed</p>
+        </div>
+        <div class="stat-item">
+            <h3>25+</h3>
+            <p>Years of Experience</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="container faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>How much can I save with solar energy?</h3>
+            <p>On average, customers save 20-30% on their energy bills after going solar. Savings depend on system size and location.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is the maintenance required?</h3>
+            <p>Solar systems require minimal maintenance. We offer yearly maintenance plans for optimal efficiency.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How long does installation take?</h3>
+            <p>Most installations are completed within 1-3 days depending on system size and roof condition.</p>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="container newsletter">
+        <h2>Stay Updated with Our Newsletter</h2>
+        <p>Sign up to receive the latest news, updates, and special offers on solar solutions.</p>
+        <form>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or ready to go solar? Send us a message!</p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GreenTech Solar Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+css
+
+.responsive-img {
+    max-width: 100%;  
+    height: auto;     
+    display: block;   
+    margin: 0 auto;   
+}
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #1a9656;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+/* Main sections styling */
+.container {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.services, .testimonials, .contact, .stats, .faq, .newsletter {
+    text-align: center;
+}
+
+.service-item, .testimonial-item, .faq-item {
+    margin-bottom: 20px;
+}
+
+/* Service items styling */
+.service-item h3 {
+    color: #1a9656;
+}
+
+.service-item p {
+    color: #666;
+}
+
+/* Statistics Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.stat-item h3 {
+    font-size: 2.2em;
+    color: #1a9656;
+}
+
+.stat-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* FAQ Section */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    color: #1a9656;
+    cursor: pointer;
+}
+
+.faq-item p {
+    display: none;
+    color: #666;
+}
+
+/* Newsletter Signup Section */
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #1a9656;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #166945;
+}
+
+/* Contact form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1a9656;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #166945;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* JavaScript for FAQ Toggle */
+.faq-item h3:hover {
+    text-decoration: underline;
+}
